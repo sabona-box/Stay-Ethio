@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Visit Ethiopia</title>
+</head>
+<body>
+    <header>
+        <h1>Book Your Stay in Ethiopia</h1>
+        <p>Plan your trip and enjoy the beauty of Ethiopia.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="booking.html">Booking</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Travel Booking Form</h2>
+        <p>Please fill in the information below to book your trip.</p>
+        <form>
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="destination">Choose Your Destination</label><br>
+            <select id="destination" name="destination" required>
+                <option value="">Select a destination</option>
+                <option value="Lalibela">Lalibela</option>
+                <option value="Sof Omar Cave">Sof Omar Cave</option>
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Axum">Axum</option>
+                <option value="Harar">Harar</option>
+                <option value="Simien Mountains">Simien Mountains</option>
+            </select>
+            <br><br>
+
+            <label for="checkin">Arrival Date:</label><br>
+            <input type="date" id="checkin" name="checkin" required>
+            <br><br>
+
+            <label for="checkout">Departure Date:</label><br>
+            <input type="date" id="checkout" name="checkout" required>
+            <br><br>
+
+            <label for="guests">Number of Guests:</label><br>
+            <input type="number" id="guests" name="guests" min="1" required>
+            <br><br>
+            
+            <label for="accommodation">Accommodation Type:</label><br>
+            <select id="accommodation" name="accommodation">
+                <option value="">Select Accommodation</option>
+                <option value="luxury">Hotel</option>
+                <option value="mid-range">Guest House</option>
+                <option value="budget">Apartment</option>
+            </select>
+            <br><br>
+
+            <label for="additional-info">Additional Information:</label><br>
+            <textarea id="additional-info" name="additional-info" rows="5" cols="30"></textarea>
+            <br><br>
+            <button type="submit">Submit Booking</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p> © 2026 Visit Ethiopia. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@visitethetiopia.com">Email us</a></p>
+    </footer>
+</body>
+</html>
